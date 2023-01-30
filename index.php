@@ -12,10 +12,22 @@
 
 </head>
 <body>
+    <!-- START: PHP INCLUDE -->
+    <?php require "./includes/db.php"; ?>
+    <!-- END: PHP INCLUDE -->
+
+    <!-- START: HEADER -->
+
+    <!-- END: HEADER -->
+
     <!-- Page Content Start -->
     
 
     <!-- Page Content End -->
+
+    <!-- START: FOOTER -->
+    <?php include "./includes/footer.php"; ?>
+    <!-- END: FOOTER -->
 
     <!--BOOTSTRAP and LOCAL Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
