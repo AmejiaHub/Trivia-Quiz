@@ -12,7 +12,7 @@
 
 // QUERY FUNCTIONS -------------------------------------------------
 
-function fetchQuestionById($id, $dbConnection){
+    function fetchQuestionById($id, $dbConnection){
     echo "$id";
     $sqlStatement = $dbConnection->query("SELECT * FROM `questions` WHERE `id` = $id");
     $row = $sqlStatement->fetch(PDO::FETCH_ASSOC);
@@ -20,6 +20,5 @@ function fetchQuestionById($id, $dbConnection){
     // Gibt Zeilendaten als assoziativer Array zu genau einer Frage zurück
     // Beispiel: $row
     return $row;
-}
-
+    }
 ?>

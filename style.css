@@ -3,3 +3,8 @@
     margin: 0;
     box-sizing: border-box; 
 }
+
+.banner {
+    width: auto;
+    height: 10px;
+}

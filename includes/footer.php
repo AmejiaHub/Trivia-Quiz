@@ -1,14 +1,26 @@
-<section class="d-flex justify-content-center mb-4">
+<?php echo
 
-      <div class="bg-image hover-overlay ripple shadow-1-strong rounded w-100" style="">
-        <picture>
-          <source srcset="
-          https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content-gh/en/_mdb5/standard/web/docs/navigation/footer/examples/assets/15.webp
-            " type="image/webp">
-          <img src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content-gh/en/_mdb5/standard/web/docs/navigation/footer/examples/assets/15.webp" class="w-100" alt="MDB 5 Simple Footer Component">
-        </picture>
-        <a href="https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115?view=side" target="_blank">
-          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-        </a>
-      </div>
-</section>
+'<footer class="text-center text-lg-start fixed-bottom" style="background-color: #db6930;">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-facebook"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-youtube"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-instagram"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-twitter"></i>
+      </button>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: Albert Mejia
+    </div>
+    <!-- Copyright -->
+</footer>'
+
+?>
