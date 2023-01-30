@@ -18,16 +18,17 @@
 
     // SQL-Statement formulieren: Alle Daten (ganze Tabellenzeile)
     // zur Frage mit der angegebenen $id auslesen
-    $id = 601;
+    $id = '601';
     $question = fetchQuestionById($id, $dbConnection);
     
+    // currentQuestionIndex value
+    $currentQuestionIndex = 0;
+    $quiz = ["questionNum" => 10,];
     ?>
 
-    <?php echo $question["question_text"];?>
-    <!-- END: PHP INCLUDE -->
+    <h7>Frage<?php echo ($currentQuestionIndex + 1); ?> von <?php echo $quiz["questionNum"]; ?></h7>
+    <h3><?php echo $question["question_text"]; ?></h3>
 
-
-    <!-- START: PAGE CONTENT -->
     <form id="quiz-form" action="question.php" method="post">
     <?php
     // Generiere Antwort-Radio-Buttons mit Beschriftung
@@ -54,10 +55,12 @@
         <input class='form-check-input' type='radio' name='single-choice' id='$answerColumnName' value='$value'>
         <label class='form-check-label' for='$answerColumnName'>$answerText</label>
         </div>";
-    }
+        }
     }
     
     ?>
+
+
     <input type="submit" value="Submit">
     </form>
     <!-- END: Page Content -->
