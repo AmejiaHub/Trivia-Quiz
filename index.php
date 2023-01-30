@@ -22,11 +22,11 @@
     <?php include "./includes/header.php"; ?>
     <!-- END: HEADER -->
 
-    <!-- Page Content Start -->
-    
+    <!-- START: PAGE CONTENT -->
+    <div class="container-fluid text-center">
     <p>Test text for content</p>
-
-    <!-- Page Content End -->
+    </div>
+    <!-- END: PAGE CONTENT -->
 
     <!-- START: FOOTER -->
     <?php include "./includes/footer.php"; ?>

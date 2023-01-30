@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- START: HEADER -->
-    <?php include "./includes/header.php"; ?>
-    <!-- END: HEADER -->
-
-
     <!-- START: PHP INCLUDE -->
     <?php require "./includes/db.php"; ?>
     <!-- END: PHP INCLUDE -->
+
+    <!-- START: HEADER -->
+    <?php include "./includes/header.php"; ?>
+    <!-- END: HEADER -->
 
 
     <!-- START: Page Content -->
