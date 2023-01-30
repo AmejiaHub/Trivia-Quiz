@@ -12,9 +12,9 @@
 
 </head>
 <body>
-    <!-- PHP INCLUDE -->
+    <!-- START: PHP INCLUDE -->
     <?php 
-    require "./includes/dp.php"; 
+    require "./includes/db.php"; 
 
     // SQL-Statement formulieren: Alle Daten (ganze Tabellenzeile)
     // zur Frage mit der angegebenen $id auslesen
@@ -22,6 +22,10 @@
     $question = fetchQuestionById($id, $dbConnection);
     
     ?>
+
+    <?php echo $question["question_text"];?>
+    <!-- END: PHP INCLUDE -->
+
     <!-- Page Content Start -->
     
 
