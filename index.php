@@ -13,7 +13,10 @@
 </head>
 <body>
     <!-- START: PHP INCLUDE -->
-    <?php require "./includes/db.php"; ?>
+    <?php require "./includes/dp.php"; 
+    echo "hello";
+    ?>
+
     <!-- END: PHP INCLUDE -->
 
     <!-- START: HEADER -->

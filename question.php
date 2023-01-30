@@ -14,16 +14,13 @@
 <body>
     <!-- PHP INCLUDE -->
     <?php 
-    require "./includes/db.php";
+    require "./includes/dp.php"; 
 
     // SQL-Statement formulieren: Alle Daten (ganze Tabellenzeile)
     // zur Frage mit der angegebenen $id auslesen
     $id = 601;
-    $sqlStatement = $dbConnection->query("SELECT * FROM `questions` WHERE `id` = $id");
-    $row = $sqlStatement->fetch(PDO::FETCH_ASSOC);
-
-    print_r($row);
-
+    $question = fetchQuestionById($id, $dbConnection);
+    
     ?>
     <!-- Page Content Start -->
     
