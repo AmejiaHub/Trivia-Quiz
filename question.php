@@ -1,3 +1,6 @@
+<?php
+require "./includes/data-collector.php"; // Muss ganz am Anfang der Hauptseite sein, enthält start_session()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +20,14 @@
     
     <!-- START: PHP INCLUDE -->
     <?php 
-    require "./includes/db.php"; 
+            // Bestimme die Anzahl der verfügbaren Fragen
+            if (isset($quiz["questionIdSequence"])) {
+                $id = $quiz["questionIdSequence"][$currentQuestionIndex];
+        }
 
-    // SQL-Statement formulieren: Alle Daten (ganze Tabellenzeile)
-    // zur Frage mit der angegebenen $id auslesen
-    $id = '601';
-    $question = fetchQuestionById($id, $dbConnection);
-    
-    // currentQuestionIndex value
-    $currentQuestionIndex = 0;
-    $quiz = ["questionNum" => 10,];
-    ?>
+            // Hole alle Datenfelder zur Frage mit $id von der Datenbank
+            $question = fetchQuestionById($id, $dbConnection);
+        ?>
     <!-- END PHP INCLUDE -->
 
     
