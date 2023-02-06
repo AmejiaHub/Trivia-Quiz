@@ -1,15 +1,26 @@
+<?php echo
 
-
-<section id="shadow-section" class="p-5 bg-black text-light">
-    <div class="container">
+'<footer class="text-center text-lg-start fixed-bottom" style="background-color: #db6930;">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-facebook"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-youtube"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-instagram"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #db6930;">
+      <i class="bi-twitter"></i>
+      </button>
     </div>
-</section>
+    <!-- Start: Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: Albert Mejia
+    </div>
+    <!-- End: Copyright -->
+</footer>'
 
-
-        <nav class="navbar navbar-expand-lg bg-black py-3 fixed-bottom">
-            <div class="container">
-                <a href="#" class="navbar-brand text-white-50 fs-6">&copy; 2023 Danger Quiz & Co.</a>
-                <button type="button" class="btn btn-outline-warning">Start Quiz</button>
-            </div>
-        </nav>
+?>
 

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Trivia Quiz - Technology</title>
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- BOOTSTRAP ICONS -->
@@ -17,9 +17,7 @@
 
 </head>
 <body>
-    <!-- START: PHP INCLUDE -->
-    <?php require "./includes/db.php"; ?>
-    <!-- END: PHP INCLUDE -->
+    
 
     <!-- START: HEADER -->
     <?php include "./includes/header.php"; ?>
@@ -44,8 +42,8 @@
                 
             <!--
                 input type="hidden"
-                    lastQuestionIndex: mit PHP gesetzt
-                    indexStep: mit JavaScript setIntValue(fieldId, value) verändert
+                lastQuestionIndex: mit PHP gesetzt
+                indexStep: mit JavaScript setIntValue(fieldId, value) verändert
             -->
             <input type="hidden" id="lastQuestionIndex" name="lastQuestionIndex" value="-1">
             <input type="hidden" id="indexStep" name="indexStep" value="1">
@@ -53,7 +51,7 @@
             <!-- Validierungswarnung -->
             <p id="validation-warning" class="warning"></p>
 
-            <!-- submit -->
+            <!-- Submit -->
             <input style="margin-top:20px;" type="submit" value="Start">
         </form>
     </div>
