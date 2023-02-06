@@ -29,7 +29,7 @@
             <!-- Themenwahl -->
             <label for="quiz-topic" class="form-label">Quiz Thema - bitte auswählen!</label> 
             <select style="width:400px" class="form-select" aria-label="Default select example" id="topic" name="topic">
-                <option value="geography">Geopgraphy</option>
+                <option value="geography">Technology</option>
                 <option value="animals">Animals</option>
                 <option value="movies">Movies</option>
             </select>

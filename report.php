@@ -1,3 +1,14 @@
+<?php
+    require "./includes/data-collector.php"; // Muss zuerst sein wegen start_session()
+
+    // Variable für den Index der aktuellen Frage vorbereiten
+    // $lastQuestionIndex wird in data-collector.php vorbereitet.
+    $currentQuestionIndex = $lastQuestionIndex +1;
+
+    // Variablen für die hidden-Felder vorbereiten (lastPageID, quiz-last-question-index)
+    $currentPageID = "question-" . $currentQuestionIndex;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,16 +24,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- START: PHP INCLUDE -->
-    <?php require "./includes/db.php"; ?>
-    <!-- END: PHP INCLUDE -->
 
     <!-- START: HEADER -->
     <?php include "./includes/header.php"; ?>
     <!-- END: HEADER -->
 
 
-    <!-- START: Page Content -->
+    <!-- START: Page Content / FORMULAR "Fragestellung"-->
+    <div class="row">
+            <div class="col-sm-8">
+                <!-- Fragestellung -->
+                <h7> Congratulations!</h7>
+                <h3> You achieved x out of possible y points.</h3>
+
+            </div> 
+            
+            <button class="btn btn-primary" onclick="document.location='/index.php';">Neues Quiz</button>
+        </div>
     
     <!-- END: Page Content -->
 
